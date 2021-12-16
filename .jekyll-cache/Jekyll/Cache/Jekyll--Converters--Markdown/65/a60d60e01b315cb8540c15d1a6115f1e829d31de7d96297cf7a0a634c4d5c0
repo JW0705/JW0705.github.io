@@ -1,0 +1,36 @@
+I"�<h2 id="markdown은-무엇인가">Markdown은 무엇인가?</h2>
+
+<p>Markdown 설명에 들어가기 앞서서, 코딩에 조금이라도 관심이 있거나, GitHub에 들어갔던 경험이 있는 사람이라면 README.md 파일을 본 적이 있을 것이다.
+이 <strong>.md</strong> 파일 확장자가 바로 <strong>Markdown</strong>의 약자이다.</p>
+
+<p>이 Markdown은 일반 텍스트로 서식이 있는 문서를 작성하는 방법이며, 아래에 배운 내용들을 요약해보려고 한다.</p>
+
+<h4 id="1-header제목">1. Header(제목)</h4>
+<p><code class="language-plaintext highlighter-rouge">#, ##, ###, ... 으로 제목을 작성할 수 있다.</code></p>
+
+<h4 id="2-italic-기울임체">2. <em>Italic</em> (기울임체)</h4>
+<p><code class="language-plaintext highlighter-rouge">*...*, _..._ 으로 기울임체로 작성할 수 있다.</code></p>
+
+<h4 id="3-bold-강조체">3. <strong>Bold</strong> (강조체)</h4>
+<p><code class="language-plaintext highlighter-rouge">**...**, __...__ 으로 강조체로 작성할 수 있다.</code></p>
+
+<h4 id="4-strikethrough-취소선">4. <del>Strikethrough</del> (취소선)</h4>
+<p><code class="language-plaintext highlighter-rouge">~~...~~ 으로 취소선으로 작성할 수 있다.</code></p>
+
+<h4 id="5-unordered-list-순서-없는-리스트">5. Unordered List (순서 없는 리스트)</h4>
+<p><code class="language-plaintext highlighter-rouge">- ... , * ..., + ... 으로 순서 없는 리스트를 작성할 수 있다.</code></p>
+
+<h4 id="6-ordered-list-순서-있는-리스트">6. Ordered List (순서 있는 리스트)</h4>
+<p><code class="language-plaintext highlighter-rouge">1. ... 으로 순서 있는 리스트를 작성할 수 있다.</code></p>
+
+<h4 id="7-code-코드">7. <code class="language-plaintext highlighter-rouge">Code</code> (코드)</h4>
+<p><code class="language-plaintext highlighter-rouge">`...` 으로 코드를 작성할 수 있다.</code></p>
+
+<h4 id="8">8.</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Code Block (코드 블럭)
+```...``` 으로 코드 블럭을 작성할 수 있다.
+</code></pre></div></div>
+
+<p>이상으로 <strong>Markdown</strong>에 대해서 간략하게 알아볼 수 있었다.</p>
+
+:ET
