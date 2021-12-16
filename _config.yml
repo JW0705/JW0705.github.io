@@ -31,6 +31,12 @@ banner: "banner.jpg"
 email: zaeuoo@kookmin.ac.kr
 author: JW0705
 
+header_pages:
+   - index.html
+   - archives.html
+   - categories.html
+   - tags.html
+   - about.md
 
 theme: jekyll-theme-yat
 
