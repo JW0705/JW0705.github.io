@@ -1,200 +1,29 @@
-<div align="center">
-  <br>
+## 프로젝트 Build 과정
 
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat">
-    <img alt="jekyll-theme-yat →~ jekyll" src="https://user-images.githubusercontent.com/9413601/106478481-346fdf00-64e4-11eb-9385-1ab5329c3234.png" width="600">
-  </a>
+#### 1. Git 설치하기.
+GitHub만 써왔던 내게, Git 자체는 조금 생소했다. 그래도 리눅스 관련 코딩을 했던 것을 생각을 하며 다시 새록새록 기억을 떠올리니 금방 적응할 수 있었다.
 
-  <h1>JEKYLL YAT THEME</h1>
+#### 2. 블로그용 repo 만들고, Jekyll 설치하기.
+현재 Repository인 JW0705.github.io를 만들었다.
+또한 git clone https://jw0705.github.io blog를 통해 클론을 만들어주고, 본격적인 작업에 들어가기 전 준비과정을 진행했다.
+Ruby를 기반으로 한 Jekyll은 처음 보는 것이었으나, 막상 Jekyll로 터미널에서 다루는 언어는 생각보다 없고 소프트웨어적인 측면에서 큰 역할을 하는 것으로 보였다.
 
-</div>
+#### 3. 테마 다운로드하기.
+나는 겉보기에도 이쁘고, 좋아하는 기능이 많이 있는 jekyll-theme-yat-master 의 theme을 다운받았다. 하지만 이것저것 기능이 많다보니 해당 테마 속의 내용물도 자연히 많을 수 밖에 없었고, 테마를 적용하는 데 자꾸 실패를 하기도 하고, 몇 가지 기능을 내가 원하는 대로 바꾸려고 하였으나 해당 부분을 담당하는 코드를 찾지 못하여 실패하는 부분이 많았다.
 
-<h4 align="center">
-  <a href="https://jekyllrb.com/" target="_blank"><code>Jekyll</code></a> theme for elegant writers.
-</h4>
+하지만 해당 테마의 README.md 파일을 통해 여러 시행착오를 겪으면서 Gemfile 에 `gem "jekyll-theme-yat"` 을, config.yml 에는  `theme: jekyll-theme-yat` 을 추가로 작성을 해야 한다는 점을 알고난 이후로 테마를 적용하였다. 하지만 역시나 마찬가지로, 기능을 내 입맛대로 바꾸는 데는 실패하였다.
 
-<p align="center">
-  <a href="https://jeffreytse.github.io/jekyll-theme-yat">
-    <img src="https://github.com/jeffreytse/jekyll-theme-yat/workflows/Github%20Pages/badge.svg"
-      alt="Github Pages" />
-  </a>
+#### 4. 댓글 적용하기.
+강의를 따라서 Disqus를 이용하여 댓글을 적용할 수 있었다.
+`comments = true` 인 경우에만 댓글을 작성 할 수 있도록 설정을 하였으며, 적용을 하고나서도 친구들에게 부탁하여 작성이 되는지 확인해보면서 신기함을 많이 느꼈다.
 
-  <a href="http://badge.fury.io/rb/jekyll-theme-yat">
-    <img src="https://badge.fury.io/rb/jekyll-theme-yat.svg"
-      alt="Gem Version" />
-  </a>
+#### 5. favicon 적용하기.
+favicon을 적용하기 위해서는 .ico 라는 확장자가 필요해서 우선 이미지를 32x32 사이즈로 만드는 사이트에서 이미지를 만들고, 이후에 favicon을 만드는 사이트에서 favicon을 제작했다.
+그리고 구글링을 통해 `<head></head>` 구문에 favicon을 등록하는 코드를 넣으면 된다길래 넣었는데, 테마마다 조금씩 달라서 그런지 아니면 내가 favicon의 경로를 이상한 곳으로 설정을 해서 그런지 홈페이지의 좌상단 부분에만 favicon이 나오고 원하는 링크창이나 탭에는 favicon이 등록되지 않았다.
 
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg"
-      alt="License: MIT" />
-  </a>
+#### 6. Topic을 주제로 한 Post 작성하기.
+**Markdown**을 이용하여 '_Git & GitHub, Markdown_ '에 대해서 작성해보았다. 아직은 Markdown에 서툴러서 Build 과정을 작성하는 것과, Post 둘 다 많이 사용하지도 않고, 조금 어색한 면이 존재한다.
 
-  <a href="https://liberapay.com/jeffreytse">
-    <img src="http://img.shields.io/liberapay/goal/jeffreytse.svg?logo=liberapay"
-      alt="Donate (Liberapay)" />
-  </a>
+#### 마치며.
 
-  <a href="https://patreon.com/jeffreytse">
-    <img src="https://img.shields.io/badge/support-patreon-F96854.svg?style=flat-square"
-      alt="Donate (Patreon)" />
-  </a>
-
-  <a href="https://ko-fi.com/jeffreytse">
-  <img height="20" src="https://www.ko-fi.com/img/githubbutton_sm.svg"
-  alt="Donate (Ko-fi)" />
-  </a>
-</p>
-
-<div align="center">
-  <sub>Built with ❤︎ by
-  <a href="https://jeffreytse.net">jeffreytse</a> and
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat/graphs/contributors">contributors </a>
-  </sub>
-</div>
-
-<br>
-
-Hey, nice to meet you, you found this [Jekyll][jekyll] theme. Here the
-_YAT (Yet Another Theme)_ is a modern responsive theme. It's quite
-clear, clean and neat for writers and posts. **If you are an elegant
-writer and focus on content, don't miss it.**
-
-<p align="center">
-Like this elegant theme? You can give it a star or sponsor me!<br>
-I will respect your crucial support and say THANK YOU!
-</p>
-
-<p align="center">
-
-  <img src="https://user-images.githubusercontent.com/9413601/91842897-6a840b00-ec87-11ea-95ca-52abcc1ac063.png" alt="demo-screenshot" width="100%"/>
-
-</p>
-
-<h4 align="center">BANNER</h4>
-
-<p align="center">
-
-  <img src="https://user-images.githubusercontent.com/9413601/123897812-ae729a00-d996-11eb-96b8-b76ba926f555.gif" alt="demo-screenshot" width="100%"/>
-
-</p>
-
-## Features
-
-- Support beautiful **Night Mode**.
-- Modern responsive web design.
-- Full layouts `home`, `post`, `tags`, `archive` and `about`.
-- Uses font awesome 5 for icons.
-- Beautiful page banner with image and video.
-- Beautiful Syntax Highlight using [highlight.js][highlight-js].
-- RSS support using [Jekyll Feed][jekyll-feed] gem.
-- Optimized for search engines using [Jekyll Seo Tag][jekyll-seo-tag] gem.
-- Sitemap support using [Jekyll Sitemap][jekyll-sitemap] gem.
-- Complex and flexible table support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- MathJAX and LaTeX optional support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Media (Youtube, Spotify, etc.) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Diagram (PlantUML, Mermaid) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Google Translation support.
-- New post tag support.
-
-Also, visit the [Live Demo][yat-live-demo] site for the theme.
-
-## Installation
-
-There are three ways to install:
-
-- As a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes).
-- As a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible).
-- Forking/directly copying all of the theme files into your project.
-
-### Gem-based Theme Method
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "jekyll-theme-yat"
-```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: jekyll-theme-yat
-```
-
-And then execute:
-
-```bash
-$ bundle
-```
-
-Or install it yourself as:
-
-```bash
-$ gem install jekyll-theme-yat
-```
-
-### Remote Theme Method with GitHub Pages
-
-Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
-
-To install:
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "github-pages", group: :jekyll_plugins
-```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-# theme: owner/name --> Don't forget to remove/comment the gem-based theme option
-remote_theme: "jeffreytse/jekyll-theme-yat"
-```
-
-And then execute:
-
-```bash
-$ bundle
-```
-
-### GitHub Pages without limitation
-
-GitHub Pages runs in `safe` mode and only allows [a set of whitelisted plugins/themes](https://pages.github.com/versions/). **In other words, the third-party gems will not work normally**.
-
-To use the third-party gem in GitHub Pages without limitation:
-
-Here is a GitHub Action named [jekyll-deploy-action](https://github.com/jeffreytse/jekyll-deploy-action) for Jekyll site deployment conveniently. 👍
-
-## Usage
-
-Add or update your available layouts, includes, sass and/or assets.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_data`, `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-yat.gemspec` accordingly.
-
-## Contributing
-
-Issues and Pull Requests are greatly appreciated. If you've never contributed to an open source project before I'm more than happy to walk you through how to create a pull request.
-
-You can start by [opening an issue](https://github.com/jeffreytse/jekyll-theme-yat/issues/new) describing the problem that you're looking to resolve and we'll go from there.
-
-## License
-
-This theme is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php) © JeffreyTse.
-
-<!-- External links -->
-
-[jekyll]: https://jekyllrb.com/
-[yat-git-repo]: https://github.com/jeffreytse/jekyll-theme-yat/
-[yat-live-demo]: https://jeffreytse.github.io/jekyll-theme-yat/
-[jekyll-spaceship]: https://github.com/jeffreytse/jekyll-spaceship
-[jekyll-seo-tag]: https://github.com/jekyll/jekyll-seo-tag
-[jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
-[jekyll-feed]: https://github.com/jekyll/jekyll-feed
-[highlight-js]: https://github.com/highlightjs/highlight.js
+블로그를 직접 만들어 보는 활동은 내 눈에도 코딩을 하는 결과가 시각적으로 보여서 즐거웠었다. 시간이 생긴다면 웹 관련 쪽으로도 공부를 해서 틈틈히 자신만의 블로그를 가꾸어나가고, 궁극적으로는 테마없이  스스로가 나만의 블로그를 만들어 보는 것이 목표가 될 것이다.
